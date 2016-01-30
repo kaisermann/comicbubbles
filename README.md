@@ -33,6 +33,9 @@ You can see some examples on codepen: http://codepen.io/chrispif/pen/xZWVrG
 	How are you?</div>
 </div>
 ````
+Will produce: 
+
+![](https://github.com/kaisermann/comicBubbles/blob/master/comicbubble.gif?raw=true)
 
 ## Observations
 
