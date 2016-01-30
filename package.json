@@ -5,7 +5,7 @@
   "main": "dist/cbubble.min.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaisermann/comicBubbles.git"
+    "url": "https://github.com/kaisermann/comicbubbles.git"
   },
   "keywords": [
     "css",
@@ -16,7 +16,7 @@
   "author": "Christian Kaisermann",
   "license": "",
   "bugs": {
-    "url": "https://github.com/kaisermann/comicBubbles/issues"
+    "url": "https://github.com/kaisermann/comicbubbles/issues"
   },
   "dependencies": {},
   "devDependencies": {

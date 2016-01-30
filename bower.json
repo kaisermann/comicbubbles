@@ -1,7 +1,7 @@
 {
-    "name": "comicBubble",
+    "name": "comicbubbles",
     "version": "1.0.0",
-    "homepage": "https://github.com/kaisermann/comicBubbles",
+    "homepage": "https://github.com/kaisermann/comicbubbles",
     "authors": [
         "Christian Kaisermann <christian@kaisermann.me>"
     ],
@@ -17,5 +17,5 @@
         "**/.*",
         "index.html"
     ],
-    "main": ["dist/tiq.js"]
+    "main": ["dist/cbubble.min.css"]
 }
