@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8Bit Comic Bubbles - By Christian Kaisermann <christian@kaisermann.me></title>
+	<link rel="stylesheet" href="./page.css">
+	<link rel="stylesheet" href="./dist/cbubble.min.css">
+</head>
+<body>
+	<div class="container">
+
+		<h1>CSS Comic Bubbles</h1>
+
+		<span class="credits">
+			By <a href="http://kaisermann.me" target="_blank">Kaisermann</a> <br>
+			Based on <a href="http://wigflip.com/ds/" target="_blank">http://wigflip.com/ds/</a>
+		</span>
+
+		<p class="description">
+			The only mandatory class is: <strong>.cbubble</strong>
+		</p>
+
+		<hr/>
+
+		<div class="inner">
+
+			<div class="inner__row text--left">
+				<span class="inner__title">.text--left > .cbubble</span>
+				<div class="cbubble">
+					Hello
+				</div>
+				<br>
+				<div class="cbubble cbubble--right">
+					How are you?
+				</div>
+			</div>
+
+			<div class="inner__row text--right">
+				<span class="inner__title">
+					.text--right > .cbubble--right
+				</span>
+				<div class="cbubble cbubble--right">
+					To the right 1 2 3...
+				</div>
+			</div>
+
+			<div class="inner__row text--left">
+				<span class="inner__title">.cbubble<br>.cbubble--btn > input</span>
+				<div class="cbubble">
+					<input type="email" placeholder="Please type your email">
+				</div>
+			</div>
+
+			<div class="inner__row">
+				<span class="inner__title">.cbubble<br>.cbubble--hoverable</span>
+				<span class="inner__desc">Come on, hover it!</span>
+				<div class="cbubble cbubble cbubble--hoverable">
+					Testing to the right 1 2 3...
+				</div>
+			</div>
+
+			<div class="inner__row text--right">
+				<span class="inner__title">.cbubble.cbubble--btn > button</span>
+				<div class="cbubble cbubble--right cbubble--hoverable cbubble--btn">
+					<button>Click me</button>
+				</div>
+			</div>
+
+			<div class="inner__row">
+				<span class="inner__title">.cbubble<br>.cbubble--hoverable<br>.cbubble--no-selection</span>
+				<span class="inner__desc">Come on, select it!</span>
+				<div class="cbubble cbubble cbubble--hoverable cbubble--no-selection">
+					PLEASE, SELECT ME
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "name": "comicBubble",
+    "version": "1.0.0",
+    "homepage": "https://github.com/kaisermann/comicBubbles",
+    "authors": [
+        "Christian Kaisermann <christian@kaisermann.me>"
+    ],
+    "description": "CSS only simple 8bit-like comic balloons",
+    "keywords": [
+        "css",
+        "bubble",
+        "balloon",
+        "8bit"
+    ],
+    "license": "",
+    "ignore": [
+        "**/.*",
+        "index.html"
+    ],
+    "main": ["dist/tiq.js"]
+}

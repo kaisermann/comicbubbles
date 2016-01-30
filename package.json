@@ -1,0 +1,30 @@
+{
+  "name": "comicBubbles",
+  "version": "1.0.0",
+  "description": "CSS only simple 8bit-like comic balloons",
+  "main": "dist/cbubble.min.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaisermann/comicBubbles.git"
+  },
+  "keywords": [
+    "css",
+    "bubble",
+    "balloon",
+    "8bit"
+  ],
+  "author": "Christian Kaisermann",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/kaisermann/comicBubbles/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "gulp-stylus": "^2.3.0"
+  }
+}
