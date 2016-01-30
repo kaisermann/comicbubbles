@@ -1,6 +1,6 @@
 # 8 Bit-like Comic Bubbles
 
-Simple CSS only, one element, 8 Bit-like comic bubble. 
+Simple CSS only, one element, 8 Bit-like comic bubble. Based on [http://wigflip.com/ds/](http://wigflip.com/ds/).
 
 ## Classes
 * **.cbubble**
