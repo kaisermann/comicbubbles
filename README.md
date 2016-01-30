@@ -14,6 +14,10 @@ Simple CSS only, one element, 8 Bit-like comic bubble. Based on [http://wigflip.
 * **.cbubble--no-selection**
 	* Optional. Makes the bubble unselectable by the user's cursor.
 
+## Installation
+
+* _bower install --save comicbubbles_
+* Manual copy :)
 
 ## Examples & some usages
 
