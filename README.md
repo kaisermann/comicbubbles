@@ -57,4 +57,4 @@ IE 9+, Chrome, Safari, Firefox, Opera...
 ## Observations
 
 1. To rebuild the project, just run '**gulp**' on your terminal.
-2. To change the hover colors you can simply rebuild the project with a different value on the variables or you can just search and replace the default colors value.
+2. To change the hover colors you can simply rebuild the project with a different value on the variables or you can just search and replace the default colors values.
