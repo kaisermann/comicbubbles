@@ -39,12 +39,9 @@ You can see some examples on codepen: http://codepen.io/chrispif/pen/xZWVrG
 
 ###### Sample code
 ```` 
-<div class="cbbl">
-	Hello</div>
-</div>
-<div class="cbbl cbbl--right">
-	How are you?</div>
-</div>
+<div class="cbbl"> Hello </div>
+<br>
+<div class="cbbl cbbl--right"> How are you? </div>
 ````
 Will produce: 
 
