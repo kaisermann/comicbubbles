@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>8Bit Comic Bubbles - By Christian Kaisermann <christian@kaisermann.me></title>
 	<link rel="stylesheet" href="./page.css">
-	<link rel="stylesheet" href="./dist/cbubble.min.css">
+	<link rel="stylesheet" href="./dist/cbbl.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="container">
@@ -17,7 +18,7 @@
 		</span>
 
 		<p class="description">
-			The only mandatory class is: <strong>.cbubble</strong>
+			The only mandatory class is: <strong>.cbbl</strong>
 		</p>
 
 		<hr/>
@@ -25,56 +26,69 @@
 		<div class="inner">
 
 			<div class="inner__row text--left">
-				<span class="inner__title">.text--left > .cbubble</span>
-				<div class="cbubble">
+				<span class="inner__title">.text--left > .cbbl</span>
+				<div class="cbbl">
 					Hello
 				</div>
 				<br>
-				<div class="cbubble cbubble--right">
+				<div class="cbbl cbbl--right">
 					How are you?
 				</div>
 			</div>
 
 			<div class="inner__row text--right">
 				<span class="inner__title">
-					.text--right > .cbubble--right
+					.text--right > .cbbl--right
 				</span>
-				<div class="cbubble cbubble--right">
+				<div class="cbbl cbbl--right">
 					To the right 1 2 3...
 				</div>
 			</div>
 
+			<div class="inner__row text--right">
+				<span class="inner__title">.text--right > .cbbl--up</span>
+				<div class="cbbl cbbl--up">
+					From the
+				</div>
+				<br>
+				<br>
+				<span class="inner__title">.text--right > cbbl--right.cbbl--up</span>
+				<div class="cbbl cbbl--right cbbl--up">
+					top
+				</div>
+			</div>
+
 			<div class="inner__row text--left">
-				<span class="inner__title">.cbubble<br>.cbubble--btn > input</span>
-				<div class="cbubble">
+				<span class="inner__title">.cbbl<br>.cbbl--btn > input</span>
+				<div class="cbbl">
 					<input type="email" placeholder="Please type your email">
 				</div>
 			</div>
 
 			<div class="inner__row">
-				<span class="inner__title">.cbubble<br>.cbubble--hoverable</span>
+				<span class="inner__title">.cbbl<br>.cbbl--hover</span>
 				<span class="inner__desc">Come on, hover it!</span>
-				<div class="cbubble cbubble cbubble--hoverable">
-					Testing to the right 1 2 3...
+				<div class="cbbl cbbl cbbl--right cbbl--hover">
+					Hover bubble
 				</div>
 			</div>
 
 			<div class="inner__row text--right">
-				<span class="inner__title">.cbubble.cbubble--btn > button</span>
-				<div class="cbubble cbubble--right cbubble--hoverable cbubble--btn">
+				<span class="inner__title">.cbbl<br>.cbbl--up<br>.cbbl--btn > button</span>
+				<div class="cbbl cbbl--right cbbl--up cbbl--hover cbbl--btn">
 					<button>Click me</button>
 				</div>
 			</div>
 
 			<div class="inner__row">
-				<span class="inner__title">.cbubble<br>.cbubble--hoverable<br>.cbubble--no-selection</span>
+				<span class="inner__title">.cbbl<br>.cbbl--hover<br>.cbbl--up<br>.cbbl--no-selection</span>
 				<span class="inner__desc">Come on, select it!</span>
-				<div class="cbubble cbubble cbubble--hoverable cbubble--no-selection">
+				<div class="cbbl cbbl cbbl--hover cbbl--up cbbl--no-selection">
 					PLEASE, SELECT ME
 				</div>
 			</div>
 		</div>
 	</div>
-	<a href="https://github.com/kaisermann/comicbubbles"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	<a href="https://github.com/kaisermann/comicbbls"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 </body>
 </html>

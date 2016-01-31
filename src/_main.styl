@@ -8,17 +8,17 @@ $hbdc = $hovered-border-color = #7BC8A4
 $hbkc = $hovered-background-color = #eee
 $hsc = $hovered-shadow-color = lighten(#7BC8A4, 60%)
 
-.cbubble
+.cbbl
 	position relative
 	display inline-block
-	margin 10px 5px 29px 6px
+	margin 10px 9px 29px 6px
 	text-align center
-	font-weight bold
+	font-weight 700
 	background-color $bkc
 	color $tc
 	padding 5px
-	box-shadow 0 -3px 0 $bkc, 0 -6px 0 $bdc, 3px 0 0 $bkc, 3px -3px 0 $bdc, 6px 0 0 $bdc, 0 3px 0 $bkc, 0 6px 0 $bdc, -3px 0 0 $bkc, -3px  3px 0 $bdc, -6px 0 0 $bdc, -3px -3px 0 $bdc, 3px 3px 0 $bdc, 3px 9px 0 $sc, 6px 6px 0 $sc, 9px 3px 0 $sc
-	transition all .3s ease-in-out
+	box-shadow 0 -3px $bkc, 0 -6px $bdc, 3px 0 $bkc, 3px -3px $bdc, 6px 0 $bdc, 0 3px $bkc, 0 6px $bdc, -3px 0 $bkc, -3px  3px $bdc, -6px 0 $bdc, -3px -3px $bdc, 3px 3px $bdc, 3px 9px $sc, 6px 6px $sc, 9px 3px $sc
+	transition all .3s ease
 	box-sizing border-box
 
 	&::before
@@ -26,12 +26,12 @@ $hsc = $hovered-shadow-color = lighten(#7BC8A4, 60%)
 		content ''
 		display block
 		position absolute
-		transition all .3s ease-in-out
+		transition all .3s ease
 		box-sizing border-box
         
 	&::after
-		background $bdc
-		width 3px
+		background $bkc
+		width 9px
 		height 3px
 		bottom -14px
         
@@ -41,44 +41,69 @@ $hsc = $hovered-shadow-color = lighten(#7BC8A4, 60%)
 		background $bkc
 		bottom -11px
 		border-left 3px solid $bdc
-		border-right 3px solid $bdc      
+		border-right 3px solid $bdc 
+    
+.cbbl--hover
+	&:hover
+		background-color $hbkc
+		color $htc
+		box-shadow 0 -3px $hbkc, 0 -6px $hbdc, 3px 0 $hbkc, 3px -3px $hbdc, 6px 0 $hbdc, 0 3px $hbkc, 0 6px $hbdc, -3px 0 $hbkc, -3px  3px $hbdc, -6px 0 $hbdc, -3px -3px $hbdc, 3px 3px $hbdc, 3px 9px $hsc, 6px 6px $hsc, 9px 3px $hsc
         
-	&.cbubble--hoverable
-		&:hover
-			background-color $hbkc
-			color $htc
-			box-shadow 0 -3px 0 $hbkc, 0 -6px 0 $hbdc, 3px 0 0 $hbkc, 3px -3px 0 $hbdc, 6px 0 0 $hbdc, 0 3px 0 $hbkc, 0 6px 0 $hbdc, -3px 0 0 $hbkc, -3px  3px 0 $hbdc, -6px 0 0 $hbdc, -3px -3px 0 $hbdc, 3px 3px 0 $hbdc, 3px 9px 0 $hsc, 6px 6px 0 $hsc, 9px 3px 0 $hsc
-            
-			&::before
-				background $hbkc
-				border-left-color $hbdc
-				border-right-color $hbdc   
-                  
-			&::after
-				background $hbdc     
-				
-			&.cbubble--btn
-				input[type=submit]
-				button
-					color $htc 
-               
-.cbubble
-//.cbubble--left
+		&::before
+			background $hbkc
+			border-left-color $hbdc
+			border-right-color $hbdc   
+              
+		&::after
+			background $hbkc     
+			
+		&.cbbl--btn
+			input[type=submit]
+			button
+			a
+				color $htc                
+.cbbl
+//.cbbl--left
 	&::before
 	&::after
 		left 20%
         
 	&::after
-		margin-left 3px
-		box-shadow 3px 0 0 $bkc, 6px 0 0 $bkc, 9px 0 0 $bkc, 12px 0 0 $bdc, 3px 3px 0 $bdc, 6px 3px 0 $bkc, 9px 3px 0 $bkc, 12px 3px 0 $bkc, 15px 3px 0 $bdc, 6px 6px 0 $bdc, 9px 6px 0 $bdc, 12px 6px 0 $bdc, 15px 6px 0 $bdc, 18px 9px 0 $bdc, 18px 6px 0 $sc, 18px 3px 0 $sc, 9px 9px 0 $sc, 12px 9px 0 $sc, 15px 9px 0 $sc
+		margin-left 6px
+		box-shadow -3px 0 $bdc, 3px 0 $bdc, 3px 3px $bkc, 0px 3px $bdc, 6px 3px $bdc, 9px 3px $sc, 3px 6px $bdc, 6px 6px $bdc, 9px 6px $sc, 6px 9px $sc
         
-	&.cbubble--hoverable
+	&.cbbl--hover
 		&:hover
 			&::after
-				box-shadow 3px 0 0 $hbkc, 6px 0 0 $hbkc, 9px 0 0 $hbkc, 12px 0 0 $hbdc, 3px 3px 0 $hbdc, 6px 3px 0 $hbkc, 9px 3px 0 $hbkc, 12px 3px 0 $hbkc, 15px 3px 0 $hbdc, 6px 6px 0 $hbdc, 9px 6px 0 $hbdc, 12px 6px 0 $hbdc, 15px 6px 0 $hbdc, 18px 9px 0 $hbdc, 18px 6px 0 $hsc, 18px 3px 0 $hsc, 9px 9px 0 $hsc, 12px 9px 0 $hsc, 15px 9px 0 $hsc
+				box-shadow -3px 0 $hbdc, 3px 0 $hbdc, 3px 3px $hbkc, 0px 3px $hbdc, 6px 3px $hbdc, 9px 3px $hsc, 3px 6px $hbdc, 6px 6px $hbdc, 9px 6px $hsc, 6px 9px $hsc, 9px 9px $hbdc
             
-       
-.cbubble--right
+				
+.cbbl--up
+	margin 29px 9px 10px 6px
+	&::before
+		top -11px
+		bottom auto
+		
+	&::after
+		top -14px
+		bottom auto
+		box-shadow -3px 0 $bdc, 3px 0 $bdc, 3px -3px $bkc, 0px -3px $bdc, 6px -3px $bdc, 3px -6px $bdc, 6px -6px $bdc
+		
+	&.cbbl--hover
+		&:hover
+			&::after
+				box-shadow -3px 0 $hbdc, 3px 0 $hbdc, 3px -3px $hbkc, 0px -3px $hbdc, 6px -3px $hbdc, 3px -6px $hbdc, 6px -6px $hbdc
+		
+		
+	&.cbbl--right
+		&::after
+			box-shadow 3px 0 $bdc, -3px 0 $bdc, -3px -3px $bkc, 0px -3px $bdc, -6px -3px $bdc, -3px -6px $bdc, -6px -6px $bdc
+		
+		&.cbbl--hover
+			&:hover
+				&::after
+					box-shadow 3px 0 $hbdc, -3px 0 $hbdc, -3px -3px $hbkc, 0px -3px $hbdc, -6px -3px $hbdc, -3px -6px $hbdc, -6px -6px $hbdc
+.cbbl--right
 	&::before
 	&::after
 		left auto
@@ -86,23 +111,24 @@ $hsc = $hovered-shadow-color = lighten(#7BC8A4, 60%)
         
 	&::after
 		margin-left 0
-		margin-right 3px
-		box-shadow -3px 0 0 $bkc, -6px 0 0 $bkc, -9px 0 0 $bkc, -12px 0 0 $bdc, -3px  3px 0 $bdc, -6px  3px 0 $bkc, -9px  3px 0 $bkc, -12px  3px 0 $bkc, -15px  3px 0 $bdc, -6px  6px 0 $bdc, -9px  6px 0 $bdc, -12px  6px 0 $bdc, -15px  6px 0 $bdc, -18px  9px 0 $bdc, -18px  6px 0 $sc, -18px  3px 0 $sc, -9px  9px 0 $sc, -12px  9px 0 $sc, -15px  9px 0 $sc
+		margin-right 6px
+		box-shadow 3px 0 $bdc, -3px 0 $bdc, -3px 3px $bkc, 0px 3px $bdc, -6px 3px $bdc, -3px 6px $bdc, -6px 6px $bdc, -3px 9px $sc, 0 6px $sc, 3px 3px $sc, 6px 0px $sc
         
-	&.cbubble--hoverable
+	&.cbbl--hover
 		&:hover
 			&::after
-				box-shadow -3px 0 0 $hbkc, -6px 0 0 $hbkc, -9px 0 0 $hbkc, -12px 0 0 $hbdc, -3px  3px 0 $hbdc, -6px  3px 0 $hbkc, -9px  3px 0 $hbkc, -12px  3px 0 $hbkc, -15px  3px 0 $hbdc, -6px  6px 0 $hbdc, -9px  6px 0 $hbdc, -12px  6px 0 $hbdc, -15px  6px 0 $hbdc, -18px  9px 0 $hbdc, -18px  6px 0 $hsc, -18px  3px 0 $hsc, -9px  9px 0 $hsc, -12px  9px 0 $hsc, -15px  9px 0 $hsc
+				box-shadow 3px 0 $hbdc, -3px 0 $hbdc, -3px 3px $hbkc, 0px 3px $hbdc, -6px 3px $hbdc, -3px 6px $hbdc, -6px 6px $hbdc, -3px 9px $hsc, 0 6px $hsc, 3px 3px $hsc, 6px 0px $hsc
                 
-.cbubble--no-selection
+.cbbl--no-selection
 	user-select none
     
-.cbubble--btn
+.cbbl--btn
 	cursor pointer
 	input[type=submit]
 	button
+	a
 		cursor pointer
-		transition color .3s ease-in-out
+		transition color .3s ease
 		
 	&:active
 		transform scale(0.95)

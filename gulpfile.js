@@ -3,7 +3,7 @@
 // Globals
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var name = "cbubble";
+var name = "cbbl";
 
 // Tasks
 
@@ -12,6 +12,10 @@ gulp.task('build', function ()
 	return gulp.src(['./src/*.styl','!./src/page.styl'])
 	.pipe($.stylus())
 	.pipe($.rename(name+'.css'))
+	.pipe($.autoprefixer({
+		browsers: ['last 2 versions'],
+		cascade: false
+	}))
 	.pipe($.size())
 	.pipe(gulp.dest('./dist/'));
 });

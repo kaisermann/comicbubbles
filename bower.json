@@ -1,6 +1,6 @@
 {
   "name": "comicbubbles",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/kaisermann/comicbubbles",
   "authors": [
     "Christian Kaisermann <christian@kaisermann.me>"
@@ -18,7 +18,7 @@
     "index.html"
   ],
   "main": [
-    "dist/cbubble.min.css"
+    "dist/cbbl.min.css"
   ],
   "dependencies": {}
 }
