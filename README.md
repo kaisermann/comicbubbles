@@ -48,7 +48,7 @@ You can see some examples on codepen: http://codepen.io/chrispif/pen/xZWVrG
 ````
 Will produce: 
 
-![](https://github.com/kaisermann/comicbbls/blob/master/comicbbl.gif?raw=true)
+![](https://raw.githubusercontent.com/kaisermann/comicbubbles/master/comicbubbles.gif)
 
 ## Compatibility
 
