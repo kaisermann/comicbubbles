@@ -25,7 +25,7 @@ But Christian, **3kb** for only those simple balloons?
 
 ## Installation
 
-* _bower install --save comicbbls_
+* _bower install --save comicbubbles_
 * Manual copy :)
 
 ## Examples & some usages
@@ -56,4 +56,5 @@ IE 9+, Chrome, Safari, Firefox, Opera...
 
 ## Observations
 
-* To rebuild the project, just run '**gulp**' on your terminal.
+1. To rebuild the project, just run '**gulp**' on your terminal.
+2. To change the hover colors you can simply rebuild the project with a different value on the variables or you can just search and replace the default colors value.
