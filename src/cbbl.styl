@@ -1,0 +1,128 @@
+$tc = $text-color = #000
+$bdc = $border-color = #000
+$bkc = $background-color = #fff
+$sc = $shadow-color = #aaa
+
+$htc = $hovered-text-color = #000
+$hbdc = $hovered-border-color = #7BC8A4
+$hbkc = $hovered-background-color = #eee
+$hsc = $hovered-shadow-color = lighten(#7BC8A4, 60%)
+
+.cbbl
+	position: relative
+	display: inline-block
+	margin: 10px 9px 29px 6px
+	text-align: center
+	font-weight: 700
+	background-color: $bkc
+	color: $tc
+	padding: 5px
+	box-shadow: 0 -3px $bkc, 0 -6px $bdc, 3px 0 $bkc, 3px -3px $bdc, 6px 0 $bdc, 0 3px $bkc, 0 6px $bdc, -3px 0 $bkc, -3px  3px $bdc, -6px 0 $bdc, -3px -3px $bdc, 3px 3px $bdc, 3px 9px $sc, 6px 6px $sc, 9px 3px $sc
+	transition: all .3s ease
+	box-sizing: border-box
+
+	&::before
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		transition: all .3s ease
+		box-sizing: border-box
+		left 20%
+
+	&::after
+		background: $bkc
+		width: 9px
+		height: 3px
+		bottom: -14px
+		margin-left 6px
+		box-shadow -3px 0 $bdc, 3px 0 $bdc, 3px 3px $bkc, 0px 3px $bdc, 6px 3px $bdc, 9px 3px $sc, 3px 6px $bdc, 6px 6px $bdc, 9px 6px $sc, 6px 9px $sc
+
+
+	&::before
+		width: 15px
+		height: 8px
+		background: $bkc
+		bottom: -11px
+		border-left: 3px solid $bdc
+		border-right: 3px solid $bdc
+
+	&.-hover
+		&:hover
+			background-color: $hbkc
+			color: $htc
+			box-shadow: 0 -3px $hbkc, 0 -6px $hbdc, 3px 0 $hbkc, 3px -3px $hbdc, 6px 0 $hbdc, 0 3px $hbkc, 0 6px $hbdc, -3px 0 $hbkc, -3px  3px $hbdc, -6px 0 $hbdc, -3px -3px $hbdc, 3px 3px $hbdc, 3px 9px $hsc, 6px 6px $hsc, 9px 3px $hsc
+
+			&::before
+				background: $hbkc
+				border-left-color: $hbdc
+				border-right-color: $hbdc
+
+			&::after
+				box-shadow -3px 0 $hbdc, 3px 0 $hbdc, 3px 3px $hbkc, 0px 3px $hbdc, 6px 3px $hbdc, 9px 3px $hsc, 3px 6px $hbdc, 6px 6px $hbdc, 9px 6px $hsc, 6px 9px $hsc, 9px 9px $hbdc
+
+			&.-control
+				input[type=submit]
+				button
+				a
+					color $htc
+
+	&.-up
+		margin 29px 9px 10px 6px
+		&::before
+			top -11px
+			bottom auto
+
+		&::after
+			top -14px
+			bottom auto
+			box-shadow -3px 0 $bdc, 3px 0 $bdc, 3px -3px $bkc, 0px -3px $bdc, 6px -3px $bdc, 3px -6px $bdc, 6px -6px $bdc
+
+		&.-hover
+			&:hover
+				&::after
+					box-shadow -3px 0 $hbdc, 3px 0 $hbdc, 3px -3px $hbkc, 0px -3px $hbdc, 6px -3px $hbdc, 3px -6px $hbdc, 6px -6px $hbdc
+
+
+		&.-right
+			&::after
+				box-shadow 3px 0 $bdc, -3px 0 $bdc, -3px -3px $bkc, 0px -3px $bdc, -6px -3px $bdc, -3px -6px $bdc, -6px -6px $bdc
+
+			&.-hover
+				&:hover
+					&::after
+						box-shadow 3px 0 $hbdc, -3px 0 $hbdc, -3px -3px $hbkc, 0px -3px $hbdc, -6px -3px $hbdc, -3px -6px $hbdc, -6px -6px $hbdc
+
+	&.-right
+		&::before
+		&::after
+			left auto
+			right 20%
+
+		&::after
+			margin-left 0
+			margin-right 6px
+			box-shadow 3px 0 $bdc, -3px 0 $bdc, -3px 3px $bkc, 0px 3px $bdc, -6px 3px $bdc, -3px 6px $bdc, -6px 6px $bdc, -3px 9px $sc, 0 6px $sc, 3px 3px $sc, 6px 0px $sc
+
+		&.-hover
+			&:hover
+				&::after
+					box-shadow 3px 0 $hbdc, -3px 0 $hbdc, -3px 3px $hbkc, 0px 3px $hbdc, -6px 3px $hbdc, -3px 6px $hbdc, -6px 6px $hbdc, -3px 9px $hsc, 0 6px $hsc, 3px 3px $hsc, 6px 0px $hsc
+
+	&.-no-selection
+		user-select none
+
+
+	&.-control
+		cursor pointer
+		input[type=submit]
+		button
+		a
+			cursor pointer
+			transition color .3s ease
+
+		&:active
+			transform scale(0.95)
+
+				
+

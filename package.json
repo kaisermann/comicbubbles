@@ -2,7 +2,7 @@
   "name": "comicBubbles",
   "version": "1.1.0",
   "description": "CSS only simple 8bit-like comic balloons",
-  "main": "dist/cbubble.min.css",
+  "main": "dist/cbbl.min.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/kaisermann/comicbubbles.git"

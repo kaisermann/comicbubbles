@@ -18,12 +18,15 @@
   position: absolute;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  left: 20%;
 }
 .cbbl::after {
   background: #fff;
   width: 9px;
   height: 3px;
   bottom: -14px;
+  margin-left: 6px;
+  box-shadow: -3px 0 #000, 3px 0 #000, 3px 3px #fff, 0px 3px #000, 6px 3px #000, 9px 3px #aaa, 3px 6px #000, 6px 6px #000, 9px 6px #aaa, 6px 9px #aaa;
 }
 .cbbl::before {
   width: 15px;
@@ -33,85 +36,73 @@
   border-left: 3px solid #000;
   border-right: 3px solid #000;
 }
-.cbbl--hover:hover {
+.cbbl.-hover:hover {
   background-color: #eee;
   color: #000;
   box-shadow: 0 -3px #eee, 0 -6px #7bc8a4, 3px 0 #eee, 3px -3px #7bc8a4, 6px 0 #7bc8a4, 0 3px #eee, 0 6px #7bc8a4, -3px 0 #eee, -3px 3px #7bc8a4, -6px 0 #7bc8a4, -3px -3px #7bc8a4, 3px 3px #7bc8a4, 3px 9px #cae9db, 6px 6px #cae9db, 9px 3px #cae9db;
 }
-.cbbl--hover:hover::before {
+.cbbl.-hover:hover::before {
   background: #eee;
   border-left-color: #7bc8a4;
   border-right-color: #7bc8a4;
 }
-.cbbl--hover:hover::after {
-  background: #eee;
-}
-.cbbl--hover:hover.cbbl--btn input[type=submit],
-.cbbl--hover:hover.cbbl--btn button,
-.cbbl--hover:hover.cbbl--btn a {
-  color: #000;
-}
-.cbbl::before,
-.cbbl::after {
-  left: 20%;
-}
-.cbbl::after {
-  margin-left: 6px;
-  box-shadow: -3px 0 #000, 3px 0 #000, 3px 3px #fff, 0px 3px #000, 6px 3px #000, 9px 3px #aaa, 3px 6px #000, 6px 6px #000, 9px 6px #aaa, 6px 9px #aaa;
-}
-.cbbl.cbbl--hover:hover::after {
+.cbbl.-hover:hover::after {
   box-shadow: -3px 0 #7bc8a4, 3px 0 #7bc8a4, 3px 3px #eee, 0px 3px #7bc8a4, 6px 3px #7bc8a4, 9px 3px #cae9db, 3px 6px #7bc8a4, 6px 6px #7bc8a4, 9px 6px #cae9db, 6px 9px #cae9db, 9px 9px #7bc8a4;
 }
-.cbbl--up {
+.cbbl.-hover:hover.-control input[type=submit],
+.cbbl.-hover:hover.-control button,
+.cbbl.-hover:hover.-control a {
+  color: #000;
+}
+.cbbl.-up {
   margin: 29px 9px 10px 6px;
 }
-.cbbl--up::before {
+.cbbl.-up::before {
   top: -11px;
   bottom: auto;
 }
-.cbbl--up::after {
+.cbbl.-up::after {
   top: -14px;
   bottom: auto;
   box-shadow: -3px 0 #000, 3px 0 #000, 3px -3px #fff, 0px -3px #000, 6px -3px #000, 3px -6px #000, 6px -6px #000;
 }
-.cbbl--up.cbbl--hover:hover::after {
+.cbbl.-up.-hover:hover::after {
   box-shadow: -3px 0 #7bc8a4, 3px 0 #7bc8a4, 3px -3px #eee, 0px -3px #7bc8a4, 6px -3px #7bc8a4, 3px -6px #7bc8a4, 6px -6px #7bc8a4;
 }
-.cbbl--up.cbbl--right::after {
+.cbbl.-up.-right::after {
   box-shadow: 3px 0 #000, -3px 0 #000, -3px -3px #fff, 0px -3px #000, -6px -3px #000, -3px -6px #000, -6px -6px #000;
 }
-.cbbl--up.cbbl--right.cbbl--hover:hover::after {
+.cbbl.-up.-right.-hover:hover::after {
   box-shadow: 3px 0 #7bc8a4, -3px 0 #7bc8a4, -3px -3px #eee, 0px -3px #7bc8a4, -6px -3px #7bc8a4, -3px -6px #7bc8a4, -6px -6px #7bc8a4;
 }
-.cbbl--right::before,
-.cbbl--right::after {
+.cbbl.-right::before,
+.cbbl.-right::after {
   left: auto;
   right: 20%;
 }
-.cbbl--right::after {
+.cbbl.-right::after {
   margin-left: 0;
   margin-right: 6px;
   box-shadow: 3px 0 #000, -3px 0 #000, -3px 3px #fff, 0px 3px #000, -6px 3px #000, -3px 6px #000, -6px 6px #000, -3px 9px #aaa, 0 6px #aaa, 3px 3px #aaa, 6px 0px #aaa;
 }
-.cbbl--right.cbbl--hover:hover::after {
+.cbbl.-right.-hover:hover::after {
   box-shadow: 3px 0 #7bc8a4, -3px 0 #7bc8a4, -3px 3px #eee, 0px 3px #7bc8a4, -6px 3px #7bc8a4, -3px 6px #7bc8a4, -6px 6px #7bc8a4, -3px 9px #cae9db, 0 6px #cae9db, 3px 3px #cae9db, 6px 0px #cae9db;
 }
-.cbbl--no-selection {
+.cbbl.-no-selection {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.cbbl--btn {
+.cbbl.-control {
   cursor: pointer;
 }
-.cbbl--btn input[type=submit],
-.cbbl--btn button,
-.cbbl--btn a {
+.cbbl.-control input[type=submit],
+.cbbl.-control button,
+.cbbl.-control a {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.cbbl--btn:active {
-  -webkit-transform: scale(0.95);
+.cbbl.-control:active {
   transform: scale(0.95);
 }
